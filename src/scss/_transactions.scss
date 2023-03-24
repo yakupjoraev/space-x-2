@@ -1,0 +1,118 @@
+.transactions {
+  padding-top: 100px;
+
+
+  @media (max-width: $breakpoint992) {
+    padding-top: 50px;
+  }
+
+  // .transactions__title
+
+  &__title {}
+
+  &__inner {
+    overflow-x: auto;
+
+
+    &::-webkit-scrollbar {
+      // width: 4px;
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #100C10;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: #FFFFFF;
+    }
+  }
+
+  // .transactions__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 980px;
+    margin-bottom: 10px;
+
+    @media (max-width: $breakpoint768) {
+      min-width: 740px;
+    }
+  }
+
+  // .transactions__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+    background: linear-gradient(90deg, rgba(30, 32, 35, 0.7) 0%, rgba(16, 12, 16, 0.7) 50.52%, rgba(30, 31, 38, 0.7) 100%), linear-gradient(180deg, #1E2023 0%, #0E0B22 100%);
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    @media (max-width:1200px) {
+      font-size: 14px;
+      line-height: 16px;
+      white-space: nowrap;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  // .transactions__item-header
+
+  &__item-header {
+    padding: 5px 22px;
+    background: transparent;
+  }
+
+  // .transactions__item-info
+
+  &__item-info {}
+
+  // .transactions__item-from
+
+  &__item-from {
+    flex: 0 0 25%;
+  }
+
+  // .transactions__item-block
+
+  &__item-block {
+    flex: 0 0 10%;
+  }
+
+  // .transactions__item-to
+
+  &__item-to {
+    flex: 0 0 25%;
+  }
+
+  // .transactions__item-age
+
+  &__item-age {
+    flex: 0 0 10%;
+  }
+
+  // .transactions__item-value
+
+  &__item-value {
+    flex: 0 0 10%;
+  }
+
+  // .transactions__item-fee
+
+  &__item-fee {
+    flex: 0 0 10%;
+  }
+}

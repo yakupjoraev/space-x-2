@@ -1,0 +1,134 @@
+.hero {
+  padding: 100px 0 50px;
+
+
+  @media (max-width: $breakpoint992) {
+    padding: 50px 0;
+  }
+
+
+  // .hero__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  // .hero__info
+
+  &__info {
+    flex: 0 1 488px;
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+  }
+
+  // .hero__title
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  // .hero__descr
+
+  &__descr {
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.8);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  // .hero__links
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // .hero__connect
+
+  &__connect {
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+  }
+
+  // .hero__rules
+
+  &__rules {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+
+    svg {
+      animation: arrow 2s infinite linear;
+    }
+  }
+
+  // .hero__picture
+
+  &__picture {
+
+    @media (max-width: $breakpoint992) {
+      img {
+        max-width: 100%;
+      }
+    }
+
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
